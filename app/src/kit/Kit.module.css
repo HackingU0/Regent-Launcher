@@ -1,0 +1,27 @@
+.page { height: 100%; background: var(--bg); }
+.top { padding: var(--s6) var(--s6) var(--s4); border-bottom: 1px solid var(--line); }
+.title { font-size: var(--t28); line-height: 34px; color: var(--accent); }
+.sub { color: var(--muted); font-size: var(--t13); }
+.sub code { color: var(--text); font-size: var(--t12); }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s6); padding: var(--s6); max-width: 1400px; }
+.sec { min-width: 0; }
+.wide { grid-column: 1 / -1; min-width: 0; }
+.h { font: 400 var(--t16) / 22px var(--font-display); color: var(--muted); padding-bottom: var(--s2); margin-bottom: var(--s3); border-bottom: 1px solid var(--line); }
+.body { display: flex; flex-direction: column; gap: var(--s3); }
+.row { display: flex; align-items: center; flex-wrap: wrap; gap: var(--s3); }
+.lbl { width: 110px; flex: none; color: var(--faint); font: 400 var(--t12) var(--font-mono); }
+.toggleRow { display: flex; align-items: center; justify-content: space-between; gap: var(--s5); width: 220px; height: var(--row); border-bottom: 1px solid var(--line); }
+.box { border: 1px solid var(--line); border-radius: var(--r-panel); background: var(--surface); overflow: hidden; }
+.rowFrame { height: var(--row-mod); border-bottom: 1px solid var(--line); }
+.rowFrame:last-child { border-bottom: 0; }
+.meters { display: flex; flex-direction: column; gap: var(--s2); width: 260px; }
+.muted { color: var(--muted); font-size: var(--t13); }
+.mono { font: 400 var(--t12) var(--font-mono); color: var(--muted); }
+.ul { margin: 0; padding-left: var(--s5); color: var(--muted); }
+.scrollDemo { height: 120px; border: 1px solid var(--line); border-radius: var(--r-panel); background: var(--surface); }
+.scrollRow { padding: var(--s2) var(--s3); border-bottom: 1px solid var(--line); font-size: var(--t13); }
+.panelDemo { display: flex; justify-content: space-between; align-items: center; padding: var(--s4) var(--s5); font-size: var(--t13); }
+.sortBox { height: 420px; display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: var(--r-panel); background: var(--surface); overflow: hidden; }
+.sortBox > * { flex: 1; }
+@media (max-width: 1000px) { .grid { grid-template-columns: minmax(0, 1fr); } }
+.row > input { width: 220px; }

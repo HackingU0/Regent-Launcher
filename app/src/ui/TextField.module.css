@@ -1,0 +1,18 @@
+.field, .search {
+  height: 36px; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: var(--r-ctl);
+  background: var(--bg); color: var(--text); font-size: var(--t14);
+  transition: border-color 150ms var(--ease), box-shadow 150ms var(--ease);
+}
+.field { padding: 0 var(--s3); width: 100%; min-width: 0; }
+.field:hover, .search:hover { border-color: var(--line-strong); }
+.field:focus, .search:focus-within { border-color: var(--focus); box-shadow: var(--focus-ring); }
+.field::placeholder, .bare::placeholder { color: var(--faint); }
+.field:disabled { opacity: 0.4; }
+.mono { font-family: var(--font-mono); font-size: var(--t13); }
+.search { display: flex; align-items: center; gap: var(--s2); padding: 0 var(--s2) 0 var(--s3); min-width: 0; }
+.icon { width: 16px; height: 16px; color: var(--faint); flex: none; }
+.bare { flex: 1; min-width: 0; height: 100%; border: 0; background: transparent; font-size: var(--t14); }
+.bare:focus-visible { outline: none; box-shadow: none; }
+.clear { display: grid; place-items: center; width: 24px; height: 24px; border: 0; border-radius: 4px; background: transparent; color: var(--muted); padding: 0; }
+.clear:hover { background: var(--hover); color: var(--text); }
+.clear svg { width: 14px; height: 14px; }

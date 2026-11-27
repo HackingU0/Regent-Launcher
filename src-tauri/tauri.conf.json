@@ -1,0 +1,55 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Regent Launcher",
+  "version": "0.1.0",
+  "identifier": "dev.regent.launcher",
+  "build": {
+    "beforeDevCommand": "pnpm vite",
+    "beforeBuildCommand": "pnpm build",
+    "devUrl": "http://localhost:1420",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "Regent Launcher",
+        "width": 1200,
+        "height": 780,
+        "minWidth": 980,
+        "minHeight": 620,
+        "theme": "Dark",
+        "backgroundColor": "#07080A",
+        "dragDropEnabled": false,
+        "titleBarStyle": "Overlay",
+        "hiddenTitle": true,
+        "trafficLightPosition": {
+          "x": 18,
+          "y": 20
+        }
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; img-src 'self' thumb: http://thumb.localhost data:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; connect-src ipc: http://ipc.localhost"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": [
+      "app",
+      "dmg"
+    ],
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "category": "Utility",
+    "macOS": {
+      "signingIdentity": "-"
+    },
+    "shortDescription": "Mod, playset and launch manager for Paradox grand strategy games"
+  }
+}

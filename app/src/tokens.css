@@ -1,0 +1,81 @@
+/* Launcher neutral: near-black surfaces, white CTA, hairlines at white alpha. All literal colours and font names live here. */
+:root {
+  color-scheme: dark;
+
+  /* surfaces */
+  --bg: #07080a;
+  --surface: #101111;
+  --raised: #1b1c1e;
+  --hover: rgba(255, 255, 255, 0.04);
+  --selected: rgba(255, 255, 255, 0.07);
+  --line: rgba(255, 255, 255, 0.06);
+  --line-strong: rgba(255, 255, 255, 0.1);
+  --highlight: rgba(255, 255, 255, 0.05);
+  --hi: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.5);
+  --backdrop: rgba(0, 0, 0, 0.6);
+  --elev-ring: 0 0 0 1px #1b1c1e, inset 0 0 0 1px #07080a;
+  --elev-float: 0 0 0 1px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 12px 32px rgba(0, 0, 0, 0.5);
+
+  /* text */
+  --text: #f2f2f2;
+  --muted: #9c9c9d;
+  --faint: #6a6b6c;
+
+  /* accent: monochrome; the CTA is near-white on dark */
+  --accent: #f2f2f2;
+  --accent-hi: #ffffff;
+  --accent-lo: #d6d6d6;
+  --accent-wash: var(--selected);
+  --cta: rgba(255, 255, 255, 0.88);
+  --on-accent: #18191a;
+  --focus: hsl(202, 100%, 67%);
+  --focus-ring: 0 0 0 3px hsla(202, 100%, 67%, 0.35);
+
+  /* signals */
+  --ok: hsl(151, 59%, 59%);
+  --warn: hsl(43, 100%, 60%);
+  --danger: hsl(0, 100%, 69%);
+  --lane: hsl(202, 100%, 67%);
+  --ok-wash: color-mix(in srgb, var(--ok) 12%, transparent);
+  --warn-wash: color-mix(in srgb, var(--warn) 12%, transparent);
+  --danger-wash: color-mix(in srgb, var(--danger) 12%, transparent);
+  --info-wash: color-mix(in srgb, var(--lane) 12%, transparent);
+
+  /* monogram tiles: saturation lightness; hue comes from the id */
+  --tile-bg: 10% 14%;
+  --tile-line: 10% 20%;
+  --tile-fg: 14% 66%;
+
+  /* type */
+  --cjk: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  --font-ui: "Inter", -apple-system, "SF Pro Text", system-ui, "Segoe UI", var(--cjk);
+  --font-display: "Inter", -apple-system, "SF Pro Display", system-ui, "Segoe UI", var(--cjk);
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, var(--cjk);
+  --t12: 12px;
+  --t13: 13px;
+  --t14: 14px;
+  --t16: 16px;
+  --t18: 18px;
+  --t20: 20px;
+  --t24: 24px;
+  --t28: 28px;
+  --t56: 56px;
+
+  /* space, shape, sizes */
+  --s1: 4px;
+  --s2: 8px;
+  --s3: 12px;
+  --s4: 16px;
+  --s5: 24px;
+  --s6: 32px;
+  --s7: 48px;
+  --r-ctl: 6px;
+  --r-panel: 12px;
+  --row-mod: 96px;
+  --row: 40px;
+  --sidebar-w: 248px;
+  --launchbar-h: 64px;
+  --topbar-h: 56px;
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+}

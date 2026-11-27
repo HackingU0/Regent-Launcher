@@ -1,0 +1,8 @@
+.wrap { border-top: 1px solid var(--line); }
+.head { display: flex; align-items: center; gap: var(--s2); width: 100%; height: 40px; padding: 0; border: 0; background: transparent; color: var(--text); font-size: var(--t14); font-weight: 600; text-align: left; }
+.head:hover .title { color: var(--hi); }
+.chev { width: 14px; height: 14px; color: var(--muted); transition: transform 140ms var(--ease); }
+.open { transform: rotate(90deg); }
+.title { flex: 1; }
+.meta { color: var(--faint); font: 400 var(--t12) var(--font-mono); }
+.body { padding: var(--s2) 0 var(--s4); }

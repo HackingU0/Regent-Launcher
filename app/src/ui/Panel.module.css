@@ -1,0 +1,1 @@
+.panel { position: relative; background: var(--surface); border-radius: var(--r-panel); box-shadow: 0 0 0 1px var(--line), inset 0 1px 0 var(--highlight); }

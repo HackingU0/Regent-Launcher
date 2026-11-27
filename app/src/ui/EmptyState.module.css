@@ -1,0 +1,5 @@
+.empty { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--s2); padding: var(--s7) var(--s5); text-align: center; min-height: 200px; }
+.icon { display: grid; place-items: center; width: 44px; height: 44px; margin-bottom: var(--s2); border-radius: 50%; background: var(--raised); color: var(--muted); }
+.icon svg { width: 20px; height: 20px; stroke-width: 1.75; }
+.title { font: 600 var(--t18) / 26px var(--font-display); color: var(--text); }
+.text { max-width: 46ch; color: var(--muted); font-size: var(--t14); line-height: 22px; }

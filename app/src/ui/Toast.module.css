@@ -1,0 +1,17 @@
+.host { position: fixed; z-index: 60; left: 50%; bottom: var(--s5); transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: var(--s2); width: max-content; max-width: min(480px, calc(100vw - 32px)); pointer-events: none; }
+.toast {
+  pointer-events: auto; display: flex; align-items: flex-start; gap: var(--s3); padding: var(--s2) var(--s2) var(--s2) var(--s4);
+  background: var(--raised); border-radius: var(--r-ctl);
+  box-shadow: var(--elev-float); font-size: var(--t14); line-height: 22px; color: var(--text);
+  animation: in 200ms var(--ease);
+}
+@keyframes in { from { opacity: 0; transform: translateY(8px); } }
+.icon { width: 16px; height: 16px; flex: none; margin-top: 3px; }
+.text { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.x { display: grid; place-items: center; width: 24px; height: 24px; padding: 0; border: 0; background: transparent; color: var(--muted); border-radius: 4px; }
+.x:hover { color: var(--text); background: var(--hover); }
+.x svg { width: 14px; height: 14px; }
+.info .icon { color: var(--lane); }
+.ok .icon { color: var(--ok); }
+.warn .icon { color: var(--warn); }
+.danger .icon { color: var(--danger); }

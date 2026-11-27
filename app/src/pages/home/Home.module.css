@@ -1,0 +1,58 @@
+.home { position: relative; flex: 1; min-height: 0; overflow: hidden; display: grid; grid-template-rows: minmax(0, 1fr) auto; background: var(--bg); }
+.drag { position: absolute; inset: 0 0 auto 0; height: var(--topbar-h); z-index: 3; }
+
+.launch { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--s6); padding: var(--s7) var(--s5) var(--s4); min-height: 0; }
+.wordmark {
+  color: var(--text); font: 200 clamp(40px, 5.4vw, 76px) / 1 var(--font-display);
+  letter-spacing: 0.42em; margin-right: -0.42em; /* optical centring for the trailing tracking */
+  text-transform: uppercase; text-align: center;
+}
+/* Official logos differ wildly (Stellaris 428x126 png, CK3 viewBox-only svg): fix the height, let width follow. */
+.logo { display: block; height: clamp(88px, 14vh, 126px); width: auto; max-width: min(520px, 80%); object-fit: contain; }
+.launchRow { display: flex; align-items: center; gap: var(--s3); }
+.runDot { width: 8px; height: 8px; border-radius: 50%; background: var(--ok); }
+.issue {
+  display: inline-grid; place-items: center; width: 44px; height: 44px; padding: 0;
+  border-radius: var(--r-ctl); color: var(--warn);
+  background: rgba(7, 8, 10, 0.6); border: 1px solid color-mix(in srgb, var(--warn) 25%, transparent);
+  transition: background 150ms var(--ease);
+}
+.issue:hover { background: var(--warn-wash); }
+.issue svg { width: 20px; height: 20px; stroke-width: 1.75; }
+
+.playsetLine { display: flex; align-items: center; gap: var(--s3); color: var(--muted); font-size: var(--t14); }
+.playsetSelect { min-width: 240px; background: rgba(27, 28, 30, 0.8); }
+
+.status { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: var(--s1) var(--s5); color: var(--faint); font-size: var(--t13); }
+.status > button { padding: 0; border: 0; background: none; color: inherit; transition: color 150ms var(--ease); }
+.status > button:hover { color: var(--text); }
+.ok { color: var(--ok); }
+.warn { color: var(--warn); }
+.args { max-width: 220px; font: 400 var(--t12) var(--font-mono); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.art { position: relative; height: clamp(200px, 38vh, 420px); }
+.art img, .chart { position: absolute; inset: 0; width: 100%; height: 100%; }
+.art img { object-fit: cover; object-position: center 35%; }
+.art img, .chart {
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 34%);
+          mask-image: linear-gradient(to bottom, transparent 0%, #000 34%);
+}
+.chart { color: var(--text); }
+.artMeta { position: absolute; right: var(--s5); bottom: var(--s4); display: flex; align-items: center; gap: var(--s2); }
+.build {
+  padding: var(--s1) var(--s3); border-radius: var(--r-ctl);
+  background: rgba(7, 8, 10, 0.72); color: var(--text);
+  font: 400 var(--t12) / 20px var(--font-mono); white-space: pre;
+}
+.wallBtn {
+  display: inline-grid; place-items: center; width: 28px; height: 28px; padding: 0; border: 0;
+  border-radius: var(--r-ctl); background: rgba(7, 8, 10, 0.72); color: var(--muted);
+  transition: color 150ms var(--ease), background 150ms var(--ease);
+}
+.wallBtn:hover { color: var(--text); background: rgba(7, 8, 10, 0.9); }
+.wallBtn svg { width: 16px; height: 16px; }
+
+.field { display: flex; flex-direction: column; gap: var(--s2); color: var(--muted); font-size: var(--t13); }
+.hint { margin: 0; color: var(--faint); font-size: var(--t12); line-height: 16px; }
+.error { margin: 0; color: var(--danger); font-size: var(--t13); line-height: 20px; }
+.wallRow { display: flex; gap: var(--s2); padding-top: var(--s1); }

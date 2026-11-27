@@ -1,0 +1,11 @@
+.bar { flex: none; display: flex; align-items: center; gap: var(--s4); height: var(--launchbar-h); padding: 0 var(--s6); background: var(--surface); border-top: 1px solid var(--line); }
+.version { font: 400 var(--t12) var(--font-mono); color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.grow { flex: 1; }
+.pill { padding: 0; border: 0; background: transparent; }
+.pill:hover > * { filter: brightness(1.2); }
+.args { display: flex; align-items: center; gap: var(--s3); }
+.argsLabel { color: var(--faint); font-size: var(--t14); white-space: nowrap; }
+.argsField { width: 220px; }
+.pop { font-size: var(--t13); }
+.popBody { padding: var(--s3) var(--s4); display: flex; flex-direction: column; gap: var(--s2); line-height: 18px; }
+.list { margin: 0; padding-left: var(--s4); color: var(--muted); max-height: 200px; overflow: auto; }

@@ -1,0 +1,20 @@
+.scroller { position: relative; overflow: auto; min-height: 0; overscroll-behavior: contain; }
+.active { -webkit-user-select: none; user-select: none; }
+.inner { position: relative; width: 100%; }
+.row { position: absolute; top: 0; left: 0; right: 0; }
+.active .row { transition: transform 130ms var(--ease); }
+.slot { border-radius: var(--r-panel); background: var(--hover); box-shadow: inset 0 0 0 1px var(--line-strong); }
+.slot > * { visibility: hidden; }
+.ghost {
+  position: fixed; z-index: 70; pointer-events: none;
+  background: var(--raised); border-radius: var(--r-panel);
+  box-shadow: var(--elev-float);
+}
+.handle {
+  display: grid; place-items: center; width: 16px; height: 32px; margin-left: -4px; flex: none; color: var(--faint);
+  border-radius: var(--r-ctl); touch-action: none; user-select: none; -webkit-user-select: none; cursor: grab;
+}
+.handle:hover { color: var(--text); }
+.handle:active { cursor: grabbing; }
+.handle svg { width: 16px; height: 16px; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }

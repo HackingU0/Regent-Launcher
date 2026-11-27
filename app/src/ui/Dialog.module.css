@@ -1,0 +1,11 @@
+.dialog {
+  max-width: calc(100vw - 32px); padding: 0; border: 0; border-radius: var(--r-panel);
+  background: var(--raised); color: var(--text);
+  box-shadow: var(--elev-float);
+}
+.dialog::backdrop { background: var(--backdrop); }
+.card { display: flex; flex-direction: column; }
+.head { display: flex; align-items: center; justify-content: space-between; padding: var(--s4) var(--s3) var(--s2) var(--s5); }
+.title { font: 600 var(--t18) / 26px var(--font-display); }
+.body { padding: var(--s2) var(--s5) var(--s5); font-size: var(--t14); line-height: 20px; color: var(--text); display: flex; flex-direction: column; gap: var(--s3); max-height: 60vh; overflow: auto; }
+.foot { display: flex; justify-content: flex-end; gap: var(--s2); padding: var(--s3) var(--s5) var(--s4); border-top: 1px solid var(--line); }

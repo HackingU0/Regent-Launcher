@@ -1,0 +1,8 @@
+.wrap { position: relative; display: inline-flex; }
+.tip {
+  position: absolute; z-index: 40; left: 50%; bottom: calc(100% + 8px); transform: translateX(-50%);
+  padding: var(--s1) var(--s3); border-radius: var(--r-ctl);
+  background: var(--raised); color: var(--text); box-shadow: var(--elev-float); font-size: var(--t13); line-height: 18px; white-space: nowrap;
+  pointer-events: none; opacity: 0; transition: opacity 150ms var(--ease) 0ms;
+}
+.wrap:hover .tip, .wrap:focus-within .tip { opacity: 1; transition-delay: 350ms; }

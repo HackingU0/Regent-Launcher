@@ -1,0 +1,11 @@
+.chip {
+  display: inline-flex; align-items: center; gap: var(--s1); height: 24px; padding: 0 var(--s2);
+  border-radius: 4px; border: 0; background: var(--raised);
+  font: 500 var(--t12) / 1 var(--font-ui); color: var(--muted); white-space: nowrap;
+}
+.glyph { font-size: 9px; }
+.click:hover { color: var(--text); }
+.ok { color: var(--ok); background: var(--ok-wash); }
+.warn { color: var(--warn); background: var(--warn-wash); }
+.danger { color: var(--danger); background: var(--danger-wash); }
+.accent { color: var(--text); background: var(--selected); }

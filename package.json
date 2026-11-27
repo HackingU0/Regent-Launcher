@@ -1,0 +1,36 @@
+{
+  "name": "regent-launcher-app",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "scripts/fixture.sh .fixture && REGENT_ROOT=$PWD/.fixture tauri dev --config \"{\\\"build\\\":{\\\"devUrl\\\":\\\"http://localhost:${PORT:-1420}\\\"}}\"",
+    "dev:real": "tauri dev --config \"{\\\"build\\\":{\\\"devUrl\\\":\\\"http://localhost:${PORT:-1420}\\\"}}\"",
+    "fixture:reset": "rm -f .fixture/.ready",
+    "build": "vite build",
+    "release": "tauri build",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint app",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@tanstack/react-virtual": "3.14.28",
+    "@tauri-apps/api": "2.12.5",
+    "lucide-react": "1.81.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@tauri-apps/cli": "2.12.6",
+    "@types/node": "26.6.10",
+    "@types/react": "19.3.3",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.3.0",
+    "eslint": "10.15.0",
+    "globals": "17.14.0",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.74.0",
+    "vite": "8.4.0"
+  }
+}

@@ -1,0 +1,7 @@
+.pop {
+  position: fixed; z-index: 50; max-width: min(420px, calc(100vw - 16px)); max-height: calc(100vh - 16px); overflow: auto;
+  background: var(--raised); border-radius: var(--r-ctl);
+  box-shadow: var(--elev-float);
+  animation: in 150ms var(--ease);
+}
+@keyframes in { from { opacity: 0; transform: translateY(-3px); } }

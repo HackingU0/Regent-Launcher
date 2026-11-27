@@ -1,0 +1,14 @@
+.banner {
+  display: flex; align-items: center; gap: var(--s3); min-height: 44px; padding: var(--s2) var(--s2) var(--s2) var(--s4);
+  border-radius: var(--r-ctl); background: var(--raised);
+  font-size: var(--t14); line-height: 20px;
+}
+.icon { width: 16px; height: 16px; flex: none; }
+.text { flex: 1; min-width: 0; color: #cecece; }
+.action { flex: none; height: 32px; }
+.info { background: var(--info-wash); }
+.info .icon { color: var(--lane); }
+.warn { background: var(--warn-wash); }
+.warn .icon { color: var(--warn); }
+.danger { background: var(--danger-wash); }
+.danger .icon { color: var(--danger); }
