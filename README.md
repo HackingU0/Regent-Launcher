@@ -81,6 +81,10 @@ Pushing a `v*` tag runs [the release workflow](.github/workflows/release.yml), w
 | `app/` | React frontend |
 | `scripts/` | Fixture generator for development |
 
+## License
+
+[MIT](LICENSE) for Regent's own code. It does not cover Paradox Interactive's game art, including the game icons in `app/src/shell/game-icons/`.
+
 ## Disclaimer
 
 Regent Launcher is a fan project and is not affiliated with or endorsed by Paradox Interactive. Game names, logos and icons belong to Paradox Interactive. Logos and backgrounds are read from your own game install; the sidebar icons are the games' Steam client icons.

@@ -2,6 +2,7 @@
   "name": "regent-launcher-app",
   "private": true,
   "version": "0.1.0",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "scripts/fixture.sh .fixture && REGENT_ROOT=$PWD/.fixture tauri dev --config \"{\\\"build\\\":{\\\"devUrl\\\":\\\"http://localhost:${PORT:-1420}\\\"}}\"",
